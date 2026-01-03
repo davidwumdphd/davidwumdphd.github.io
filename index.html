@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Wu, MD, PhD</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .profile-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #e0e0e0;
+            margin-bottom: 20px;
+        }
+
+        .name {
+            font-size: 2.2rem;
+            font-weight: 600;
+            margin-bottom: 30px;
+            color: #222;
+        }
+
+        .introduction {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 40px;
+            text-align: left;
+        }
+
+        .publications {
+            border-top: 1px solid #e0e0e0;
+            padding-top: 30px;
+        }
+
+        .publications h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #222;
+        }
+
+        .publication-item {
+            margin-bottom: 15px;
+            padding: 15px;
+            background-color: #f8f8f8;
+            border-radius: 8px;
+            border-left: 4px solid #007acc;
+        }
+
+        .publication-link {
+            color: #007acc;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .publication-link:hover {
+            text-decoration: underline;
+        }
+
+        .scholar-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #007acc;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 15px;
+            border: 1px solid #007acc;
+            border-radius: 6px;
+            transition: background-color 0.2s;
+        }
+
+        .scholar-link:hover {
+            background-color: #007acc;
+            color: white;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 15px;
+            }
+
+            .name {
+                font-size: 1.8rem;
+            }
+
+            .introduction {
+                font-size: 1rem;
+            }
+
+            .profile-photo {
+                width: 120px;
+                height: 120px;
+            }
+
+            .publication-item {
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="profile-section">
+            <img src="images/photo.jpg" alt="David Wu" class="profile-photo">
+            <h1 class="name">David Wu, MD, PhD</h1>
+        </section>
+
+        <section class="introduction">
+            <p>David Wu, MD, PhD, is a resident physician in the Harvard Combined Dermatology Program based at Mass General Brigham, Beth Israel Lahey Health, Boston Children's Hospital, and Dana-Farber Cancer Institute. He pursued his MD-PhD training at the University of California, San Francisco, where he worked​ on massive-scale genomic screens, CRISPR epigenome editing, and single-cell transcriptomics. His current research interests include clinical informatics and medical artificial intelligence, with a focus on clinical decision-making, safety, and alignment. He is the creator of the NOHARM medical AI benchmark.</p>
+        </section>
+
+        <section class="publications">
+            <h2>Publications</h2>
+            <div class="publication-item">
+                <a href="https://arxiv.org/abs/2512.01241" class="publication-link" target="_blank" rel="noopener noreferrer">
+                    "First, do NOHARM: towards clinically safe large language models"
+                </a>
+            </div>
+            <a href="https://scholar.google.com/citations?hl=en&user=9KK66zcAAAAJ&view_op=list_works&sortby=pubdate" class="scholar-link" target="_blank" rel="noopener noreferrer">
+                View all publications on Google Scholar
+            </a>
+        </section>
+    </div>
+</body>
+</html>
