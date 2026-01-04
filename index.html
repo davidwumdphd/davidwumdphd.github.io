@@ -455,7 +455,7 @@
         /* Responsive */
         @media (max-width: 600px) {
             .page-wrapper {
-                padding: 40px 20px 60px;
+                padding: 24px 20px 40px;
             }
 
             .theme-selector {
@@ -471,13 +471,19 @@
                 padding: 10px;
             }
 
-            .name {
-                font-size: 2rem;
+            .profile-section {
+                margin-bottom: 32px;
             }
 
             .profile-photo {
-                width: 120px;
-                height: 120px;
+                width: 100px;
+                height: 100px;
+                margin-bottom: 16px;
+            }
+
+            .name {
+                font-size: 1.75rem;
+                margin-bottom: 6px;
             }
 
             /* Keep credentials and icons in same row on mobile */
@@ -486,11 +492,13 @@
                 flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
-                gap: 6px 16px;
+                gap: 4px 12px;
+                margin-top: 10px;
             }
 
             .credential-item {
                 justify-content: center;
+                font-size: 0.8rem;
             }
 
             .credential-divider {
@@ -518,25 +526,50 @@
                 height: 16px;
             }
 
+            /* Tighter section spacing */
+            .section {
+                margin-bottom: 28px;
+            }
+
             .section-title {
-                font-size: 1.2rem;
+                font-size: 1.1rem;
+                margin-bottom: 12px;
+                padding-bottom: 8px;
             }
 
             .introduction p {
-                font-size: 0.95rem;
+                font-size: 0.9rem;
             }
 
+            /* Compact bullets */
             .about-list li {
-                font-size: 0.95rem;
+                font-size: 0.9rem;
+                line-height: 1.5;
+                margin-bottom: 6px;
+                padding-left: 16px;
             }
 
+            /* Tighter publications */
             .publication-item {
-                padding: 14px 16px;
+                padding: 12px 0;
+            }
+
+            .publication-title {
+                font-size: 0.9rem;
+                line-height: 1.5;
+            }
+
+            .publication-meta {
+                font-size: 0.8rem;
+                margin-top: 2px;
             }
 
             .scholar-link {
                 width: 100%;
                 justify-content: center;
+                margin-top: 16px;
+                padding: 8px 16px;
+                font-size: 0.85rem;
             }
         }
     </style>
