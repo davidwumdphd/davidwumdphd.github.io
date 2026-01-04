@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600&family=Lato:wght@300;400;700&family=Montserrat:wght@400;600&family=Lora:wght@400;600&family=Merriweather+Sans:wght@300;400&family=Raleway:wght@400;600&family=Roboto:wght@300;400&display=swap"
         rel="stylesheet">
     <style>
         :root {
@@ -105,6 +105,150 @@
             --radius: 10px;
         }
 
+        [data-theme="rose"] {
+            --font-heading: 'Cormorant Garamond', Georgia, serif;
+            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --bg-primary: #fdfafb;
+            --bg-secondary: #ffffff;
+            --bg-accent: #faf5f7;
+            --text-primary: #2d1f24;
+            --text-secondary: #594349;
+            --text-muted: #8a7278;
+            --accent: #b4637a;
+            --accent-hover: #9a4d63;
+            --border: #f0e4e8;
+            --border-accent: #b4637a;
+            --shadow: 0 1px 3px rgba(180, 99, 122, 0.06);
+            --shadow-hover: 0 4px 12px rgba(180, 99, 122, 0.12);
+            --radius: 10px;
+        }
+
+        [data-theme="ocean"] {
+            --font-heading: 'Cormorant Garamond', Georgia, serif;
+            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --bg-primary: #f7fafa;
+            --bg-secondary: #ffffff;
+            --bg-accent: #eef5f5;
+            --text-primary: #1a2c2c;
+            --text-secondary: #3a5454;
+            --text-muted: #5a7878;
+            --accent: #287171;
+            --accent-hover: #1e5a5a;
+            --border: #d8e6e6;
+            --border-accent: #287171;
+            --shadow: 0 1px 3px rgba(40, 113, 113, 0.05);
+            --shadow-hover: 0 4px 12px rgba(40, 113, 113, 0.1);
+            --radius: 8px;
+        }
+
+        [data-theme="lavender"] {
+            --font-heading: 'Cormorant Garamond', Georgia, serif;
+            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --bg-primary: #faf9fc;
+            --bg-secondary: #ffffff;
+            --bg-accent: #f4f2f8;
+            --text-primary: #2a2433;
+            --text-secondary: #4d4359;
+            --text-muted: #756a82;
+            --accent: #7c6b9e;
+            --accent-hover: #655688;
+            --border: #e6e1ed;
+            --border-accent: #7c6b9e;
+            --shadow: 0 1px 3px rgba(124, 107, 158, 0.05);
+            --shadow-hover: 0 4px 12px rgba(124, 107, 158, 0.1);
+            --radius: 10px;
+        }
+
+        [data-theme="sand"] {
+            --font-heading: 'Cormorant Garamond', Georgia, serif;
+            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --bg-primary: #faf9f6;
+            --bg-secondary: #ffffff;
+            --bg-accent: #f5f3ed;
+            --text-primary: #33302a;
+            --text-secondary: #5c574d;
+            --text-muted: #8a847a;
+            --accent: #9a8b6e;
+            --accent-hover: #7d7059;
+            --border: #e8e4db;
+            --border-accent: #9a8b6e;
+            --shadow: 0 1px 3px rgba(154, 139, 110, 0.05);
+            --shadow-hover: 0 4px 12px rgba(154, 139, 110, 0.1);
+            --radius: 6px;
+        }
+
+        [data-theme="luxe"] {
+            --font-heading: 'Playfair Display', serif;
+            --font-body: 'Lato', sans-serif;
+            --bg-primary: #fdfcf8;
+            --bg-secondary: #ffffff;
+            --bg-accent: #f9f7f0;
+            --text-primary: #2b2b2b;
+            --text-secondary: #525252;
+            --text-muted: #858585;
+            --accent: #d4af37;
+            --accent-hover: #b5952f;
+            --border: #f0ebe0;
+            --border-accent: #d4af37;
+            --shadow: 0 2px 10px rgba(212, 175, 55, 0.08);
+            --shadow-hover: 0 8px 30px rgba(212, 175, 55, 0.15);
+            --radius: 0px;
+        }
+
+        [data-theme="alpine"] {
+            --font-heading: 'Montserrat', sans-serif;
+            --font-body: 'Inter', sans-serif;
+            --bg-primary: #ffffff;
+            --bg-secondary: #ffffff;
+            --bg-accent: #f1f5f9;
+            --text-primary: #0f172a;
+            --text-secondary: #334155;
+            --text-muted: #64748b;
+            --accent: #0f172a;
+            --accent-hover: #334155;
+            --border: #e2e8f0;
+            --border-accent: #0f172a;
+            --shadow: 0 1px 3px rgba(15, 23, 42, 0.05);
+            --shadow-hover: 0 4px 6px rgba(15, 23, 42, 0.1);
+            --radius: 4px;
+        }
+
+        [data-theme="ivory"] {
+            --font-heading: 'Lora', serif;
+            --font-body: 'Merriweather Sans', sans-serif;
+            --bg-primary: #fefdfa;
+            --bg-secondary: #ffffff;
+            --bg-accent: #f7f3eb;
+            --text-primary: #2c2420;
+            --text-secondary: #4a403a;
+            --text-muted: #756a64;
+            --accent: #2c4c3b;
+            --accent-hover: #1e3629;
+            --border: #ebe6de;
+            --border-accent: #2c4c3b;
+            --shadow: 0 1px 2px rgba(44, 76, 59, 0.06);
+            --shadow-hover: 0 4px 12px rgba(44, 76, 59, 0.12);
+            --radius: 6px;
+        }
+
+        [data-theme="graphite"] {
+            --font-heading: 'Raleway', sans-serif;
+            --font-body: 'Roboto', sans-serif;
+            --bg-primary: #f8f9fa;
+            --bg-secondary: #ffffff;
+            --bg-accent: #eff1f3;
+            --text-primary: #212529;
+            --text-secondary: #495057;
+            --text-muted: #868e96;
+            --accent: #495057;
+            --accent-hover: #343a40;
+            --border: #dee2e6;
+            --border-accent: #495057;
+            --shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            --shadow-hover: 0 4px 12px rgba(0, 0, 0, 0.1);
+            --radius: 2px;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -132,6 +276,8 @@
             top: 20px;
             right: 20px;
             z-index: 100;
+            display: none;
+            /* Hidden by default for public site */
         }
 
         .theme-toggle {
@@ -615,6 +761,14 @@
             <button class="theme-option" data-theme="warm">Warm</button>
             <button class="theme-option" data-theme="minimal">Minimal</button>
             <button class="theme-option" data-theme="sage">Sage</button>
+            <button class="theme-option" data-theme="rose">Rose</button>
+            <button class="theme-option" data-theme="ocean">Ocean</button>
+            <button class="theme-option" data-theme="lavender">Lavender</button>
+            <button class="theme-option" data-theme="sand">Sand</button>
+            <button class="theme-option" data-theme="luxe">Luxe</button>
+            <button class="theme-option" data-theme="alpine">Alpine</button>
+            <button class="theme-option" data-theme="ivory">Ivory</button>
+            <button class="theme-option" data-theme="graphite">Graphite</button>
         </div>
     </div>
 
@@ -653,8 +807,8 @@
             <ul class="about-list">
                 <li>Resident physician, Harvard Combined Dermatology Program</li>
                 <li>Clinical AI Evaluation Lead, <a href="https://arise-ai.org/" target="_blank"
-                        rel="noopener noreferrer" class="text-link">Harvard-Stanford ARISE</a></li>
-                <li>MD-PhD at UCSF: genomic screens, CRISPR epigenome editing, single-cell transcriptomics</li>
+                        rel="noopener noreferrer" class="text-link">ARISE AI</a></li>
+                <li>MD-PhD work: genomic screens, CRISPR epigenome editing, single-cell transcriptomics</li>
                 <li>Current research: clinical informatics, safety and alignment in medical AI</li>
                 <li>Creator of the <a href="https://bench.arise-ai.org" target="_blank" rel="noopener noreferrer"
                         class="text-link">First, do NOHARM medical AI benchmark</a></li>
@@ -709,7 +863,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round"
                         d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
-                Google Scholar Profile
+                Full Publication List on Google Scholar
             </a>
         </section>
 
@@ -727,6 +881,12 @@
         const themeToggle = document.getElementById('themeToggle');
         const themeDropdown = document.getElementById('themeDropdown');
         const themeOptions = document.querySelectorAll('.theme-option');
+
+        // Logic to show theme selector ONLY on local dev (not public site)
+        const hostname = window.location.hostname;
+        if (hostname !== 'davidwumdphd.github.io' && hostname !== 'davidwumdphd.com') {
+            document.querySelector('.theme-selector').style.display = 'block';
+        }
 
         // Load saved theme
         const savedTheme = localStorage.getItem('theme') || 'classic';
