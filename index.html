@@ -221,12 +221,12 @@
         }
 
         .profile-photo {
-            width: 140px;
-            height: 140px;
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
             object-fit: cover;
-            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
-            margin-bottom: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 8px;
         }
 
         .name {
@@ -468,6 +468,13 @@
             height: 16px;
         }
 
+        /* Other Work Section */
+        .other-work-item {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            margin: 0;
+        }
+
         /* Responsive */
         @media (max-width: 600px) {
             .page-wrapper {
@@ -492,9 +499,9 @@
             }
 
             .profile-photo {
-                width: 100px;
-                height: 100px;
-                margin-bottom: 16px;
+                width: 140px;
+                height: 140px;
+                margin-bottom: 12px;
             }
 
             .name {
@@ -645,18 +652,18 @@
             <h2 class="section-title">About</h2>
             <ul class="about-list">
                 <li>Resident physician, Harvard Combined Dermatology Program</li>
-                <li><a href="https://arise-ai.org/" target="_blank" rel="noopener noreferrer"
-                        class="text-link">ARISE</a> Research Fellow and Clinical AI Evaluation Lead</li>
+                <li>Clinical AI Evaluation Lead, <a href="https://arise-ai.org/" target="_blank"
+                        rel="noopener noreferrer" class="text-link">Harvard-Stanford ARISE</a></li>
                 <li>MD-PhD at UCSF: genomic screens, CRISPR epigenome editing, single-cell transcriptomics</li>
                 <li>Current research: clinical informatics, safety and alignment in medical AI</li>
                 <li>Creator of the <a href="https://bench.arise-ai.org" target="_blank" rel="noopener noreferrer"
-                        class="text-link">First, Do NOHARM medical AI benchmark</a></li>
+                        class="text-link">First, do NOHARM medical AI benchmark</a></li>
             </ul>
         </section>
 
         <!-- Publications Section -->
         <section class="section publications">
-            <h2 class="section-title">Select Publications & Preprints</h2>
+            <h2 class="section-title">Selected Publications & Preprints</h2>
             <div class="publication-list">
                 <div class="publication-item">
                     <a href="https://arxiv.org/abs/2512.01241" class="publication-title" target="_blank"
@@ -704,6 +711,15 @@
                 </svg>
                 Google Scholar Profile
             </a>
+        </section>
+
+        <!-- Other Work Section -->
+        <section class="section other-work">
+            <h2 class="section-title">Other Work</h2>
+            <p class="other-work-item">
+                <a href="https://davidwuphoto.com" class="text-link" target="_blank" rel="noopener noreferrer">Portrait
+                    Photography</a>
+            </p>
         </section>
     </div>
 
