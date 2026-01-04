@@ -893,7 +893,14 @@
         if (savedTheme !== 'classic') {
             document.documentElement.setAttribute('data-theme', savedTheme);
         }
-        document.querySelector(`[data-theme="${savedTheme}"]`)?.classList.add('active');
+
+        // Correctly set initial active state (clearing default HTML state if needed)
+        themeOptions.forEach(opt => {
+            opt.classList.remove('active');
+            if (opt.dataset.theme === savedTheme) {
+                opt.classList.add('active');
+            }
+        });
 
         // Toggle dropdown
         themeToggle.addEventListener('click', (e) => {
