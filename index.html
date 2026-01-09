@@ -474,6 +474,20 @@
             box-shadow: var(--shadow-hover);
         }
 
+        .email-button {
+            cursor: pointer;
+            border: 1px solid var(--border);
+            background: var(--bg-secondary);
+            transition: all var(--transition);
+        }
+
+        .email-button:hover {
+            color: var(--accent);
+            border-color: var(--accent);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-hover);
+        }
+
         .social-link svg {
             width: 16px;
             height: 16px;
@@ -795,13 +809,13 @@
                 <div class="credential-item">UCSF MD-PhD</div>
                 <div class="social-divider"></div>
                 <div class="social-links">
-                    <a href="mailto:dwu@mgh.harvard.edu" class="social-link" aria-label="Email" title="Email">
+                    <button class="social-link email-button" aria-label="Email" title="Email">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
                             stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                         </svg>
-                    </a>
+                    </button>
                     <a href="https://www.linkedin.com/in/david-wu-md-phd/" class="social-link" target="_blank"
                         rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
@@ -948,6 +962,19 @@
                 themeDropdown.classList.remove('open');
             });
         });
+
+        // Email button functionality - obfuscated to prevent spam harvesting
+        const emailButton = document.querySelector('.email-button');
+        if (emailButton) {
+            emailButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                // Construct email address dynamically to avoid harvesting
+                const user = 'dwu';
+                const domain = 'mgh.harvard.edu';
+                const emailAddress = user + '@' + domain;
+                window.location.href = 'mailto:' + emailAddress;
+            });
+        }
 
         // Scroll-triggered fade-in animation
         const fadeElements = document.querySelectorAll('.fade-in');
